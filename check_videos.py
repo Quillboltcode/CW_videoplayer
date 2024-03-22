@@ -6,9 +6,9 @@ import video_library as lib
 import font_manager as fonts
 
 
-def set_text(text_area, content):
-    text_area.delete("1.0", tk.END)
-    text_area.insert(1.0, content)
+def set_text(text_area, content): # set the text in 
+    text_area.delete("1.0", tk.END) # delete all current text in text element
+    text_area.insert(1.0, content) # insert the new text at the beginning of the text element
 
 
 class CheckVideos():

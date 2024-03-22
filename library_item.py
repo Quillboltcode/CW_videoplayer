@@ -13,3 +13,13 @@ class LibraryItem:
         for i in range(self.rating):
             stars += "*"
         return stars
+    
+    def __eq__(self, __value: object) -> bool:
+        return self.name == __value.name and self.director == __value.director and self.rating == __value.rating and self.play_count == __value.play_count
+    
+
+if __name__ == '__main__':
+    item1 = LibraryItem("The Matrix", "Wachowski", 5)
+    item1eq = LibraryItem("The Matrix", "Wachowski", 5)
+    item_list = [item1, item1eq]
+    

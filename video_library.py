@@ -63,3 +63,9 @@ def increment_play_count(key):
         item.play_count += 1
     except KeyError:
         return
+    
+
+if __name__ == '__main__':
+    for i in range(5):
+        increment_play_count("01")
+        print(get_play_count("01"))
